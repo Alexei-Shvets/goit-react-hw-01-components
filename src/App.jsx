@@ -13,18 +13,18 @@ import data from './components/Statistics/data.json';
 import friends from './components/FriendList/friends.json';
 import transactions from './components/TransactionHistory/transactions.json';
 
-//стили//
-
+//общие стили//
+import { Container } from './App.styled';
 
   export const App = () => {
   const { username, tag, location, avatar, stats } = user;  
   return (
-    <Fragment> 
+    <Container> 
       <Profile username={username} tag={tag} location={location} avatar={avatar} stats={stats} />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-      <TransactionHistory items={transactions} />;
-    </Fragment>
+      <TransactionHistory items={transactions} />
+    </Container>
   );
 };
 
