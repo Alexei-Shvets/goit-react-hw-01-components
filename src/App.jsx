@@ -1,5 +1,5 @@
 //библиотеки//
-import { Fragment } from "react";
+import React from "react";
 
 //компоненты разметки//
 import Profile from "./components/Profile";
