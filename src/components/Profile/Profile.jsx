@@ -21,7 +21,7 @@ const Profile = ({
       <Description>
         <Avatar src={avatar} alt="User avatar"/>
         <Name>{username}</Name>
-        <p className="tag">{tag}</p>
+        <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
       </Description>
 
